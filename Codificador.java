@@ -15,4 +15,7 @@ public interface Codificador {
 
     // Recebe um string codificado e retorna o correspondente decodificado
     public String decodifica(String str);
+
+    // func criada por Bernardo -> adiciona 3 letras 'm' ao final da str
+    public String codificaBernardo(String str);
 }

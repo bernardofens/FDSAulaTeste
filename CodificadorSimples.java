@@ -32,4 +32,9 @@ public class CodificadorSimples implements Codificador {
         
         return encoded.toString();
     }
+
+    @Override
+    public String codificaBernardo(String str) {
+        return str + "mmm";
+    }
 }
