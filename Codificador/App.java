@@ -9,9 +9,13 @@ public class App {
         String texto = "Este e o string a ser codificado";
         String codificado = cod.codifica(texto);
         String decodificado = cod.decodifica(codificado);
+        String augusto = cod.codificaAugusto(texto);
+
 
         System.out.println("Texto original: "+texto);
         System.out.println("Texto codificado: "+codificado);
+        System.out.println("Texto codificado pelo Augusto: "+ augusto);
+
         System.out.println("Texto decodificado: "+decodificado);
     }
 }
