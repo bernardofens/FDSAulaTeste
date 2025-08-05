@@ -21,4 +21,11 @@ public interface Codificador {
 
     // Func criada por Augusto -> valor ASCII do caractere + tamanho da string
     public String codificaAugusto(String str);
+
+    // Func criada por Victor 
+    public String codificaVictor(String str); 
+
+    // Func criada por Elisa -> retorna a primeira letra da string "Elisa" (E)
+    public String codificaElisa();
+
 }

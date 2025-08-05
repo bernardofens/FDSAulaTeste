@@ -41,7 +41,7 @@ public class CodificadorSimples implements Codificador {
     public String codificaVictor(String str) {
         StringBuilder encoded = new StringBuilder();
 
-        for (char c : s.toCharArray()) {
+        for (char c : str.toCharArray()) {
             encoded.append((char) (c + 19));
         }
 
@@ -57,4 +57,11 @@ public class CodificadorSimples implements Codificador {
 
         return codificacao.toString();
     }
+
+    @Override
+    public String codificaElisa() {
+        String string = "Elisa";
+        return String.valueOf(string.charAt(0));
+    }
+
 }
