@@ -37,4 +37,14 @@ public class CodificadorSimples implements Codificador {
     public String codificaBernardo(String str) {
         return str + "mmm";
     }
+
+    public String codificaVictor(String str){
+        StringBuilder encoded = new StringBuilder();
+
+        for (char c : s.toCharArray()) {
+            encoded.append((char) (c + 19));
+        }
+
+        return encoded.toString();
+    }
 }
