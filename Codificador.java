@@ -19,6 +19,18 @@ public interface Codificador {
     // func criada por Bernardo -> adiciona 3 letras 'm' ao final da str
     public String codificaBernardo(String str);
 
+<<<<<<< HEAD
     // func criada por Augusto -> "completar"
     public String codificaAugusto(String str);
+=======
+    // Func criada por Augusto -> valor ASCII do caractere + tamanho da string
+    public String codificaAugusto(String str);
+
+    // Func criada por Victor 
+    public String codificaVictor(String str); 
+
+    // Func criada por Elisa -> retorna a primeira letra da string "Elisa" (E)
+    public String codificaElisa();
+
+>>>>>>> 7978bae4e21ac4b2e2ed8734ef16e29b9c9e363e
 }

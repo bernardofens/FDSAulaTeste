@@ -9,7 +9,7 @@ public class CodificadorSimples implements Codificador {
         return LocalDate.of(2025, 03, 13);
     }
 
-    public int getNivelSeguranca(){
+    public int getNivelSeguranca() {
         return 1;
     }
 
@@ -25,24 +25,15 @@ public class CodificadorSimples implements Codificador {
 
     public String decodifica(String str) {
         StringBuilder encoded = new StringBuilder();
-        
+
         for (char c : str.toCharArray()) {
             encoded.append((char) (c - 1));
         }
-        
+
         return encoded.toString();
     }
 
     public String codificaBernardo(String str) {
         return str + "mmm";
-    }
-
-    public String codificaAugusto(String str) {
-        StringBuilder codificacao = new StringBuilder();
-
-        for (char c : str.toCharArray()) {
-            codificacao.append((char) str.length() - (c));
-        }
-        return codificacao.toString();
     }
 }
