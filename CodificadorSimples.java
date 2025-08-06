@@ -33,8 +33,16 @@ public class CodificadorSimples implements Codificador {
         return encoded.toString();
     }
 
-    @Override
     public String codificaBernardo(String str) {
         return str + "mmm";
+    }
+
+    public String codificaAugusto(String str) {
+        StringBuilder codificacao = new StringBuilder();
+
+        for (char c : str.toCharArray()) {
+            codificacao.append((char) str.length() - (c));
+        }
+        return codificacao.toString();
     }
 }
