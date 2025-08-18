@@ -1,4 +1,4 @@
-public class Produto {
+public class Produto implements ItemVendavel {
     private int id;
     private String nome;
     private double preco;
@@ -9,16 +9,23 @@ public class Produto {
         this.preco = preco;
     }
 
+    @Override
     public int getId() {
         return id;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    @Override
     public double getPreco() {
         return preco;
     }
 
+    @Override
+    public void exibirDetalhes(String indentacao) {
+        System.out.println(indentacao  + nome + " - R$ " + String.format("%.2f", preco));
+    }
 }
