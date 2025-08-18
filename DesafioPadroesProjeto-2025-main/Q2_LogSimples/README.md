@@ -4,3 +4,4 @@ Aplicar o padrão Singleton de maneira que uma **instancia única** do mecanismo
 
 O exemplo de uso deve ser alterado de maneira a explorar o uso do padrão.
 
+Instância única do log!
