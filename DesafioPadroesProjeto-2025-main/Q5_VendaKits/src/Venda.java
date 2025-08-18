@@ -1,7 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Venda {
     private LocalDateTime data;
@@ -28,9 +27,9 @@ public class Venda {
         return total;
     }
 
-    public void registrarVenda(Produto produto, int quantidade) {
-        ItemDeVenda item = new ItemDeVenda(produto, quantidade);
-        itens.add(item);
+    public void registrarVenda(ItemVendavel item, int quantidade) {
+        ItemDeVenda itemVenda = new ItemDeVenda(item, quantidade);
+        itens.add(itemVenda);
     }
 
     public String emitirComprovante() {
